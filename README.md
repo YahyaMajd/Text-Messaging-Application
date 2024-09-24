@@ -5,7 +5,7 @@
 "@langchain/community": "^0.0.43",
      	"ollama": "^0.5.0"
 
-### Detailed Setup Tutorial 
+### Detailed AI AutoCorrecter Setup Tutorial 
 To set this up one needs to do the following :
 1 - Download the Ollama AI from their website and complete its installation
 2- run 'ollama pull mistral' in their CLI for Ollama to pull the manifest used to run 'Mistral 7B'
