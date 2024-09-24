@@ -1,0 +1,103 @@
+#app-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #4CAF50; /* More modern shade of green */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add subtle shadow for depth */
+}
+
+.menu-item {
+    flex-grow: 1; /* Allows each menu item to fill an equal portion of the menu bar */
+    text-align: center;
+    background-color: transparent; /* Use transparency for a cleaner look */
+    color: white;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.menu-item a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit; /* Ensure anchor tags inherit color from parent */
+}
+
+.icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 24px;
+    height: auto;
+}
+
+#app-view {
+    width: 100%;
+    margin: auto; /* Center align the app view */
+    transition: width 0.3s; /* Smooth transition for width changes */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #app-view {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #app-view {
+        width: 80%;
+    }
+}
+
+.message {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px; /* Add rounded corners for a softer look */
+}
+
+.message-list {
+    max-height: 500px;
+    overflow-y: auto; /* Use auto instead of scroll to only show scrollbar when necessary */
+    padding: 10px;
+    border: 1px solid #ddd; /* Add a light border for definition */
+}
+
+.my-message {
+    text-align: right;
+    background-color: #d0f0d3;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+#app-menu li:hover, .menu-item:hover {
+    background-color: #366534; /* Darker shade of green for hover */
+    transition: background-color 0.3s;
+}
+
+.room-list li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer; /* Indicate that the list items are clickable */
+}
+
+/* Improve form input and button styles */
+input[type="text"], button {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer; /* Improve cursor on hover for button */
+    border: none;
+}
+
+button:hover {
+    background-color: #366534;
+}

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@langchain/community": "^0.0.43",
+    "express": "^4.18.2",
+    "gpt4all": "^4.0.0",
+    "mongodb": "^6.3.0",
+    "ollama": "^0.5.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "project-round-beaver",
+  "version": "1.0.0",
+  "main": "Database.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
